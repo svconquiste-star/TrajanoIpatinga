@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:pixel": "tsx scripts/test-conversa.ts"
   },
   "dependencies": {
     "next": "^14.0.0",
@@ -19,6 +20,7 @@
     "typescript": "^5.0.0",
     "@types/node": "^20.0.0",
     "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0"
+    "@types/react-dom": "^18.0.0",
+    "tsx": "^4.0.0"
   }
 }

@@ -121,10 +121,6 @@ export function shouldFireOncePerVisitor(key: string) {
   }
 }
 
-function sha256HexNodeCompatible(input: string) {
-  return input;
-}
-
 export async function getVisitorFingerprint() {
   if (typeof window === 'undefined') return '';
   const key = 'external_id';
@@ -176,8 +172,11 @@ export async function sendToMetaPixel(args: {
   phone?: string;
   name?: string;
 }) {
-  const pixelId = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID || '754980670506724';
+  const pixelId = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID;
   const eventId = args.eventId || gerarEventId(args.eventName);
+  if (!pixelId) {
+    return { ok: false, reason: 'missing_pixel_id', event_id: eventId };
+  }
 
   const sent = getSessionSentEventIds();
   if (sent.has(eventId)) {
