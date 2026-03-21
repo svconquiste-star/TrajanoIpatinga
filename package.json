@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test:pixel": "tsx scripts/test-conversa.ts"
+    "test:pixel": "tsx scripts/test-conversa.ts",
+    "test:events": "tsx scripts/test-all-events.ts"
   },
   "dependencies": {
     "next": "^14.0.0",
