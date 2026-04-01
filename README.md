@@ -1,4 +1,4 @@
-# Emprest-Nunes Landing Page
+# Landing Page — Atendimento via WhatsApp
 
 Landing page de atendimento via WhatsApp, configurada para deploy em Coolify com Traefik.
 
@@ -6,8 +6,8 @@ Landing page de atendimento via WhatsApp, configurada para deploy em Coolify com
 
 - **Framework**: Next.js 14 (App Router, JavaScript)
 - **Deployment**: Coolify + Traefik
-- **Meta Pixel**: `2291211478038763` (Core Config compliance)
-- **WhatsApp**: `5531975021616`
+- **Meta Pixel**: `1325454299634632` (Core Config compliance)
+- **WhatsApp**: `553175021616`
 
 ## Instalação Local
 
