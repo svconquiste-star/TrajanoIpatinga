@@ -3,9 +3,9 @@
  * Pode ser removido após os testes.
  */
 
-const PIXEL_ID = '1625627995434532';
-const ACCESS_TOKEN = 'EAASSHw8yBYIBRBcOqaitOCsZCdtJ60qclbxZAb2gBdv3NFMMYqcSRumC8EvNXjCmuQpWEOQK3mBH3aRKhTymK34JZCYKWZByAiMYpK8LqwkuLhi1sEK3ZBbMzlrSoXvcZB6puyPR9yxHb0RLFUbw3T07qrIan9ZCuZBoQJi9Sv3iA7d8tyeF6IsZBmZCNhJ3XY5ZBdJEQZDZD';
-const TEST_EVENT_CODE = 'TEST939';
+const PIXEL_ID = '1438982624011739';
+const ACCESS_TOKEN = 'EAAS9U9wMmJkBRLwZClKjX7rcoMLLT66Ym8KY1VvGaGBFy9J0oZAIJcUss71PZBmxX4wV70bG0fleuZAgRtYWCFgdQPZCRdaPJ1GeJ3b8wFXHHwTrKmXZCdreQcykQtBCy1bb3r2rnupvornypsKnW5EsYwZBj97nSd8Bnz1osZAnsHu4JjlCqu2o6Oi3svWYfBEZC0QZDZD';
+const TEST_EVENT_CODE = 'TEST71931';
 
 const API_URL = `https://graph.facebook.com/v21.0/${PIXEL_ID}/events?access_token=${ACCESS_TOKEN}`;
 
@@ -16,7 +16,6 @@ async function sendEvent(eventName, eventId, extraData = {}) {
     event_name: eventName,
     event_time: timestamp,
     event_id: eventId,
-    event_source_url: 'https://atendimento.example.com/',
     action_source: 'website',
     user_data: {
       client_user_agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
