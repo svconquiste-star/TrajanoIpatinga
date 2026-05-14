@@ -17,6 +17,7 @@ const merriweather = Merriweather({
 });
 
 const PIXEL_ID = '1438982624011739';
+const PIXEL_ID_2 = '1270209555097956';
 
 export const metadata = {
   title: 'Fale com um Especialista | Atendimento via WhatsApp',
@@ -56,7 +57,9 @@ export default function RootLayout({ children }) {
   s.parentNode.insertBefore(t,s)
 }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('set','autoConfig',false,'${PIXEL_ID}');
+fbq('set','autoConfig',false,'${PIXEL_ID_2}');
 fbq('init','${PIXEL_ID}');
+fbq('init','${PIXEL_ID_2}');
 fbq('track','PageView');
             `,
           }}
@@ -67,6 +70,13 @@ fbq('track','PageView');
             width="1"
             style={{ display: 'none' }}
             src={`https://www.facebook.com/tr?id=${PIXEL_ID}&ev=PageView&noscript=1`}
+            alt=""
+          />
+          <img
+            height="1"
+            width="1"
+            style={{ display: 'none' }}
+            src={`https://www.facebook.com/tr?id=${PIXEL_ID_2}&ev=PageView&noscript=1`}
             alt=""
           />
         </noscript>
